@@ -1,0 +1,139 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/intro_view_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="26dp"
+            android:gravity="center"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/background_actionbar"
+            android:textSize="28sp" />
+
+        <com.facebook.widget.LoginButton
+            android:id="@+id/intro_txtview_signup_facebook"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="130dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Facebook login"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/intro_txtview_signup_facebook" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="45dp" -->
+        <!-- android:layout_gravity="bottom|center_horizontal" -->
+        <!-- android:layout_marginBottom="130dp" -->
+        <!-- android:layout_marginLeft="20dp" -->
+        <!-- android:layout_marginRight="20dp" -->
+        <!-- android:background="@color/background_actionbar" -->
+        <!-- android:gravity="center" -->
+        <!-- android:padding="5dp" -->
+        <!-- android:text="Log in Facebook" -->
+        <!-- android:textColor="@android:color/white" -->
+        <!-- android:textSize="22sp" /> -->
+
+        <TextView
+            android:id="@+id/intro_txtview_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/intro_signup_mail"
+            android:drawableLeft="@drawable/mail"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Email sign up"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/intro_txtview_signin"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/intro_signin"
+            android:drawableLeft="@drawable/mail"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Email sign in"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:id="@+id/bottom_pages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <FrameLayout
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/shape_intro" />
+
+            <FrameLayout
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/shape_intro" />
+
+            <FrameLayout
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/shape_intro" />
+
+            <FrameLayout
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/shape_intro" />
+
+            <FrameLayout
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/shape_intro" />
+        </LinearLayout>
+    </FrameLayout>
+
+</ScrollView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_feed" >
+
+    <uk.co.senab.actionbarpulltorefresh.extras.actionbarcompat.PullToRefreshLayout
+        android:id="@+id/fragment_feed_group_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/fragment_feed_group_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="3dp"
+            android:dividerHeight="10dp"
+            android:divider="@color/background_feed"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/tellus_list_selector_holo_light"/>
+
+        <!-- <GridView -->
+        <!-- android:id="@+id/fragment_feed_group_gridview" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="3dp" -->
+        <!-- android:layout_marginRight="3dp" -->
+        <!-- android:layout_marginTop="3dp" -->
+        <!-- android:fadingEdge="none" -->
+        <!-- android:horizontalSpacing="3dp" -->
+        <!-- android:numColumns="1" /> -->
+    </uk.co.senab.actionbarpulltorefresh.extras.actionbarcompat.PullToRefreshLayout>
+
+
+</FrameLayout>

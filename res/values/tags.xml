@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="TAG_GROUP_ID" type="id"/>
+    <item name="TAG_GROUP_NAME" type="id"/>
+    <item name="TAG_GROUP_IMAGE" type="id"/>
+    <item name="TAG_GROUP_SUBSCRIBE" type="id"/>
+    <item name="TAG_GROUP_ADMIN" type="id"/>
+    <item name="TAG_WHATSAPP_ID" type="id"/>
+    <item name="TAG_NOTIFICAION_ID" type="id"/>
+    <item name="TAG_POST_ID" type="id"/>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/action_notification" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefIsNotification"
+            android:summary="@string/setting_notification_summary"
+            android:title="@string/setting_notification_title" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_contact_sync" >
+        <Preference
+            android:key="prefContactSync"
+            android:summary="@string/setting_contact_sync_summary"
+            android:title="@string/setting_contact_sync_title" />
+    </PreferenceCategory>
+
+    <!-- <PreferenceCategory android:title="Developer"> -->
+    <!-- <Preference android:title="Developer Options" android:key="prefDev" -->
+    <!-- android:enabled="true"/> -->
+    <!-- </PreferenceCategory> -->
+
+
+    <!-- <PreferenceCategory android:title="Release Note"> -->
+    <!-- <Preference android:title="Change Log" android:key="prefRelease" -->
+    <!-- android:enabled="true"/> -->
+    <!-- </PreferenceCategory> -->
+
+</PreferenceScreen>

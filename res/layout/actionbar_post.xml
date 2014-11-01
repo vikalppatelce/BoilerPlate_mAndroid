@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/actionbar_post_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:maxWidth="200dp"
+        android:singleLine="true"
+        android:text="TellUs"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/actionbar_post_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/send_post"
+        android:gravity="center"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:textColor="@color/background_actionbar"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:visibility="gone"
+        android:layout_toLeftOf="@id/actionbar_post_submit"
+        android:background="@android:color/white" />
+
+</RelativeLayout>

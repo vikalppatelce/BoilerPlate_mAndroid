@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notif_count_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_menu_notification" />
+
+    <TextView
+        android:id="@+id/notif_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top|right"
+        android:minHeight="32dp"
+        android:minWidth="32dp"
+        android:paddingLeft="2dp"
+        android:text="0"
+        android:textColor="@color/red"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

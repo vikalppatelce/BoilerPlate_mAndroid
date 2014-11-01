@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/group_popupmenu_subscribe" >
+        <item
+            android:id="@+id/menu_group_subscribe"
+            android:title="Subscribe"/>
+        <!-- <item android:id="@+id/menu_feed_vote" -->
+        <!-- android:title="Vote"/> -->
+    </group>
+
+</menu>

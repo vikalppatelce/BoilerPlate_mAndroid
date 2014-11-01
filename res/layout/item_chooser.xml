@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/item_chooser_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:padding="2dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_profile_edit_photo" />
+
+    <TextView
+        android:id="@+id/item_chooser_title"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_chooser_icon"
+        android:gravity="center_horizontal"
+        android:paddingBottom="2sp"
+        android:paddingTop="4sp"
+        android:text="Messaging"
+        android:textColor="@android:color/black"
+        android:textSize="11sp" />
+
+</RelativeLayout>

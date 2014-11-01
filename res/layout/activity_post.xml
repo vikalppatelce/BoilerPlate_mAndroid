@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <AutoCompleteTextView
+        android:id="@+id/activity_post_in_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tellus_edit_text_holo_light"
+        android:gravity="center_vertical"
+        android:hint="Posted In Group"
+        android:editable="false"
+        android:inputType="text"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/activity_post_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_post_in_group"
+        android:layout_marginTop="7dp"
+        android:gravity="center_vertical"
+        android:hint="Post status"
+        android:text="Blue if    Green if"
+        android:maxLines="7"
+        android:minLines="3"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/activity_post_add_media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/activity_post_text"
+        android:layout_marginTop="7dp"
+        android:padding="3dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/post_add_picture" />
+
+    <ImageView
+        android:id="@+id/activity_post_add_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_post_text"
+        android:layout_marginTop="7dp"
+        android:layout_toLeftOf="@id/activity_post_add_media"
+        android:padding="3dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/post_add_video" />
+
+    <it.sephiroth.android.library.widget.HListView
+        android:id="@+id/activity_post_media_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_below="@id/activity_post_add_media"
+        android:layout_marginTop="7dp" />
+
+</RelativeLayout>

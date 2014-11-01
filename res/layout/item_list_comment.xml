@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="54dp"
+        android:orientation="horizontal" >
+
+        <com.netdoers.ui.view.CircleImageView
+            android:id="@+id/item_list_comment_user_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="6dp"
+            android:padding="3dp"
+            android:src="@drawable/_def_contact" />
+
+        <TextView
+            android:id="@+id/item_list_comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/comment_bubble"
+            android:text="BollyWood" />
+    </LinearLayout>
+
+</LinearLayout>

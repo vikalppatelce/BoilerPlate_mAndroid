@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_feed" >
+
+    <uk.co.senab.actionbarpulltorefresh.extras.actionbarcompat.PullToRefreshLayout
+        android:id="@+id/fragment_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp" >
+
+            <LinearLayout
+                android:id="@+id/activity_feed_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <com.netdoers.ui.view.CircleImageView
+                            android:id="@+id/item_grid_feed_profile_image"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="left|top"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="7dp"
+                            android:src="@drawable/_def_contact"
+                            circle:border_color="@android:color/white"
+                            circle:border_width="2dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/item_grid_feed_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|center"
+                                android:layout_weight="1"
+                                android:text="Ramanujan Iyer Sharma posted in Bollywood Pre Release" />
+
+                            <TextView
+                                android:id="@+id/item_grid_feed_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|center"
+                                android:layout_weight="1"
+                                android:singleLine="true"
+                                android:text="24 minutes ago"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp" >
+
+                        <it.sephiroth.android.library.widget.HListView
+                            android:id="@+id/item_grid_feed_gallery"
+                            android:layout_width="match_parent"
+                            android:layout_height="160dip" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/item_grid_feed_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:text="Anil Kapoor: Criticism makes me work harder" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="7dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/item_grid_feed_true_bar"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_btn_red_fill"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/item_grid_feed_false_bar"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_btn_green_fill"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/item_grid_feed_true_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="left|center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/item_grid_feed_true"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/tellus_btn_feed_true"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/item_grid_feed_true_padding"
+                                android:scaleType="centerInside"
+                                android:text="B"
+                                android:textColor="@color/background_actionbar"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/item_grid_feed_true_count"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="1,11,111"
+                                android:textColor="@color/background_actionbar"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/item_grid_feed_true_false_percent"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="50 % True" />
+
+                        <LinearLayout
+                            android:id="@+id/item_grid_feed_false_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="right|center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/item_grid_feed_false_count"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="9,99,999"
+                                android:textColor="@color/green"
+                                android:textSize="10sp" />
+
+                            <Button
+                                android:id="@+id/item_grid_feed_false"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/tellus_btn_feed_true"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/item_grid_feed_true_padding"
+                                android:scaleType="centerInside"
+                                android:text="G"
+                                android:textColor="@color/green"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/background_feed_actions"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:id="@+id/item_grid_feed_like_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/tellus_list_selector_holo_light"
+                            android:clickable="true"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/item_grid_feed_like"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:paddingLeft="2dp"
+                                android:text="Like"
+                                android:textColor="@color/background_actionbar" />
+
+                            <ImageView
+                                android:id="@+id/item_grid_feed_like_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_toLeftOf="@+id/item_grid_feed_like"
+                                android:paddingRight="4dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/feed_like_default" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@android:color/darker_gray" />
+
+                        <RelativeLayout
+                            android:id="@+id/item_grid_feed_share"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/tellus_list_selector_holo_light"
+                            android:clickable="true"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Share" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_toLeftOf="@+id/item_grid_feed_share"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/feed_share_default" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.netdoers.ui.view.ScrollableListView
+                    android:id="@+id/activity_feed_detail_comment_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/background_feed"
+                    android:dividerHeight="5dp"
+                    android:fadingEdge="none"
+                    android:listSelector="@drawable/tellus_list_selector_holo_light" />
+            </LinearLayout>
+        </ScrollView>
+    </uk.co.senab.actionbarpulltorefresh.extras.actionbarcompat.PullToRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_feed_detail_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/activity_feed_detail_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:hint="Add comment" />
+
+        <Button
+            android:id="@+id/activity_feed_detail_comment_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="0.2"
+            android:background="@drawable/send"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

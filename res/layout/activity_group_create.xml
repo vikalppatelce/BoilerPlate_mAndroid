@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" >
+
+            <!-- <com.netdoers.ui.view.CircleImageView -->
+            <!-- android:id="@+id/activity_group_create_group_picture" -->
+            <!-- android:layout_width="100dp" -->
+            <!-- android:layout_height="100dp" -->
+            <!-- android:layout_gravity="center" -->
+            <!-- android:src="@drawable/_def_contact" -->
+            <!-- circle:border_color="@android:color/white" -->
+            <!-- circle:border_width="2dp" /> -->
+
+            <ImageView
+                android:id="@+id/activity_group_create_group_picture"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/_def_contact" />
+
+            <ImageView
+                android:id="@+id/activity_group_create_group_picture_upload"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="63dp"
+                android:onClick="onProfilePicUpdate"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_profile_edit_photo" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/profile_groups" />
+
+            <EditText
+                android:id="@+id/activity_group_create_groupname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/tellus_edit_text_holo_light"
+                android:hint="Group Name"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/glyph_description" />
+
+            <EditText
+                android:id="@+id/activity_group_create_groupdescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/tellus_edit_text_holo_light"
+                android:hint="Group Description"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:singleLine="false" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="By Creating Group, I agree to terms and policy of Tell Us as Admin of these group"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/activity_group_create_submit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/intro_signup_mail"
+            android:gravity="center"
+            android:text="Create Group"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</ScrollView>

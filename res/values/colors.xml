@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#2A000000</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="background_actionbar">#01AFD2</color>
+    <color name="background_feed">#D3D6DB</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#006400</color>
+    <color name="background_feed_actions">#F0F0F0</color>
+
+</resources>

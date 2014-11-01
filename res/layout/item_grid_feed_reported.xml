@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.netdoers.ui.view.CircleImageView
+            android:id="@+id/item_grid_feed_reported_profile_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/_def_contact"
+            circle:border_color="@android:color/white"
+            circle:border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/item_grid_feed_reported_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_weight="1"
+                android:text="Ramanujan Iyer Sharma posted in Bollywood Pre Release" />
+
+            <TextView
+                android:id="@+id/item_grid_feed_reported_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="24 minutes ago"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp" >
+
+        <it.sephiroth.android.library.widget.HListView
+            android:id="@+id/item_grid_feed_reported_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="160dip" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/item_grid_feed_reported_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="3dp"
+        android:padding="3dp"
+        android:text="Anil Kapoor: Criticism makes me work harder" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/background_feed_actions"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/item_grid_feed_reported_reject_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/tellus_list_selector_holo_light"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/item_grid_feed_reported_reject"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:text="Reject" />
+
+            <ImageView
+                android:id="@+id/item_grid_feed_reported_reject_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/item_grid_feed_reject"
+                android:paddingRight="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/feed_report_reject" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/item_grid_feed_reported_accept_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/tellus_list_selector_holo_light"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/item_grid_feed_reported_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:text="Accept" />
+
+            <ImageView
+                android:id="@+id/item_grid_feed_reported_accept_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/item_grid_feed_reported_accept_layout"
+                android:paddingRight="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/feed_report_accept" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

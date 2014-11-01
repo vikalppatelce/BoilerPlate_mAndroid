@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.Tellus" parent="@style/Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">@drawable/selectable_background_tellus</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Tellus</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Tellus</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Tellus</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Tellus</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Tellus</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_tellus</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_tellus</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Tellus</item>
+        <item name="switchStyle">@style/switch_light</item>
+    </style>
+
+    <style name="Theme.Tellus.Drawer" parent="@style/Theme.Tellus">
+        <item name="homeAsUpIndicator">@drawable/ic_drawer</item>
+    </style>
+
+    <style name="ActionBar.Solid.Tellus" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@drawable/ab_solid_tellus</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_tellus</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_tellus</item>
+        <item name="progressBarStyle">@style/ProgressBar.Tellus</item>
+        <item name="titleTextStyle">@style/MyTheme.TitleTextStyle</item>
+        <item name="subtitleTextStyle">@style/MyTheme.SubTitleTextStyle</item>
+    </style>
+
+    <style name="MyTheme.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    
+    <style name="MyTheme.SubTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Tellus" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="background">@drawable/ab_transparent_tellus</item>
+        <item name="progressBarStyle">@style/ProgressBar.Tellus</item>
+    </style>
+
+    <style name="PopupMenu.Tellus" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="android:listSelector">@drawable/selectable_background_tellus</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_tellus</item>
+    </style>
+
+    <style name="myPopupMenuTextAppearanceSmall" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="DropDownListView.Tellus" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_tellus</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Tellus" parent="@style/Widget.AppCompat.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_tellus</item>
+    </style>
+
+    <style name="DropDownNav.Tellus" parent="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_tellus</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_tellus</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_tellus</item>
+    </style>
+
+    <style name="ProgressBar.Tellus" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_tellus</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Tellus" parent="@style/Widget.AppCompat.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_tellus</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Tellus.Widget" parent="@style/Theme.AppCompat">
+        <item name="popupMenuStyle">@style/PopupMenu.Tellus</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Tellus</item>
+    </style>
+
+    <style name="switch_dark">
+        <item name="track">@drawable/switch_track_holo_dark</item>
+        <item name="thumb">@drawable/switch_inner_holo_dark</item>
+        <item name="textOn">@string/textOn</item>
+        <item name="textOff">@string/textOff</item>
+        <item name="thumbTextPadding">12dip</item>
+        <item name="switchMinWidth">96dip</item>
+        <item name="switchPadding">16dip</item>
+        <item name="switchTextAppearance">@style/TextAppearance</item>
+    </style>
+
+    <style name="switch_light">
+        <item name="track">@drawable/switch_track_holo_light</item>
+        <item name="thumb">@drawable/switch_inner_holo_light</item>
+        <item name="textOn">@string/textOn</item>
+        <item name="textOff">@string/textOff</item>
+        <item name="thumbTextPadding">12dip</item>
+        <item name="switchMinWidth">96dip</item>
+        <item name="switchPadding">16dip</item>
+        <item name="switchTextAppearance">@style/TextAppearance</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="textColor">?android:attr/textColorPrimary</item>
+        <item name="textColorHighlight">?android:attr/textColorHighlight</item>
+        <item name="textColorHint">?android:attr/textColorHint</item>
+        <item name="textColorLink">?android:attr/textColorLink</item>
+        <item name="textSize">16sp</item>
+    </style>
+
+</resources>
